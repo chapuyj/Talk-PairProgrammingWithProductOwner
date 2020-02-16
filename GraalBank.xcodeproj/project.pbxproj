@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		170238FC23F99865001454CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170238FB23F99865001454CC /* AppDelegate.swift */; };
+		170238FE23F99865001454CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170238FD23F99865001454CC /* SceneDelegate.swift */; };
+		1702390523F99867001454CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1702390423F99867001454CC /* Assets.xcassets */; };
+		1702390823F99867001454CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1702390623F99867001454CC /* LaunchScreen.storyboard */; };
+		1737286023F9997900B21378 /* AccountAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1737285F23F9997900B21378 /* AccountAcceptanceTests.swift */; };
+		1737286223F999A200B21378 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1737286123F999A200B21378 /* Account.swift */; };
+		1737286423F9A52100B21378 /* AccountAcceptanceTests-VerboseGherkin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1737286323F9A52000B21378 /* AccountAcceptanceTests-VerboseGherkin.swift */; };
+		1737286B23F9A79000B21378 /* WithdrawValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1737286A23F9A79000B21378 /* WithdrawValidator.swift */; };
+		1737286F23F9BE9000B21378 /* BalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1737286E23F9BE9000B21378 /* BalanceViewController.swift */; };
+		1737287323F9BEA800B21378 /* BalanceViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1737287223F9BEA800B21378 /* BalanceViewController.storyboard */; };
+		1737287523F9C45A00B21378 /* WithdrawValidatorUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1737287423F9C45A00B21378 /* WithdrawValidatorUnitTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1702390F23F99867001454CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 170238F023F99865001454CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 170238F723F99865001454CC;
+			remoteInfo = GraalBank;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		170238F823F99865001454CC /* GraalBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraalBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		170238FB23F99865001454CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		170238FD23F99865001454CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1702390423F99867001454CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1702390723F99867001454CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1702390923F99867001454CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1702390E23F99867001454CC /* GraalBankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraalBankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1702391423F99867001454CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1737285F23F9997900B21378 /* AccountAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountAcceptanceTests.swift; sourceTree = "<group>"; };
+		1737286123F999A200B21378 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		1737286323F9A52000B21378 /* AccountAcceptanceTests-VerboseGherkin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountAcceptanceTests-VerboseGherkin.swift"; sourceTree = "<group>"; };
+		1737286A23F9A79000B21378 /* WithdrawValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawValidator.swift; sourceTree = "<group>"; };
+		1737286E23F9BE9000B21378 /* BalanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceViewController.swift; sourceTree = "<group>"; };
+		1737287223F9BEA800B21378 /* BalanceViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BalanceViewController.storyboard; sourceTree = "<group>"; };
+		1737287423F9C45A00B21378 /* WithdrawValidatorUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawValidatorUnitTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		170238F523F99865001454CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1702390B23F99867001454CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		170238EF23F99865001454CC = {
+			isa = PBXGroup;
+			children = (
+				170238FA23F99865001454CC /* GraalBank */,
+				1702391123F99867001454CC /* GraalBankTests */,
+				170238F923F99865001454CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		170238F923F99865001454CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				170238F823F99865001454CC /* GraalBank.app */,
+				1702390E23F99867001454CC /* GraalBankTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		170238FA23F99865001454CC /* GraalBank */ = {
+			isa = PBXGroup;
+			children = (
+				1737286723F9A70E00B21378 /* App */,
+				1737286923F9A73A00B21378 /* Domain */,
+				1737286823F9A72300B21378 /* Scenes */,
+				1702390423F99867001454CC /* Assets.xcassets */,
+				1702390923F99867001454CC /* Info.plist */,
+			);
+			path = GraalBank;
+			sourceTree = "<group>";
+		};
+		1702391123F99867001454CC /* GraalBankTests */ = {
+			isa = PBXGroup;
+			children = (
+				1737286523F9A68F00B21378 /* Acceptance Tests */,
+				1737286623F9A69800B21378 /* Unit Tests */,
+				1702391423F99867001454CC /* Info.plist */,
+			);
+			path = GraalBankTests;
+			sourceTree = "<group>";
+		};
+		1737286523F9A68F00B21378 /* Acceptance Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1737285F23F9997900B21378 /* AccountAcceptanceTests.swift */,
+				1737286323F9A52000B21378 /* AccountAcceptanceTests-VerboseGherkin.swift */,
+			);
+			path = "Acceptance Tests";
+			sourceTree = "<group>";
+		};
+		1737286623F9A69800B21378 /* Unit Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1737287423F9C45A00B21378 /* WithdrawValidatorUnitTests.swift */,
+			);
+			path = "Unit Tests";
+			sourceTree = "<group>";
+		};
+		1737286723F9A70E00B21378 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				170238FB23F99865001454CC /* AppDelegate.swift */,
+				170238FD23F99865001454CC /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1737286823F9A72300B21378 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				1737286D23F9BE7700B21378 /* Balance */,
+				1737286C23F9BE6400B21378 /* Launch */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		1737286923F9A73A00B21378 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				1737286123F999A200B21378 /* Account.swift */,
+				1737286A23F9A79000B21378 /* WithdrawValidator.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		1737286C23F9BE6400B21378 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				1702390623F99867001454CC /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		1737286D23F9BE7700B21378 /* Balance */ = {
+			isa = PBXGroup;
+			children = (
+				1737286E23F9BE9000B21378 /* BalanceViewController.swift */,
+				1737287223F9BEA800B21378 /* BalanceViewController.storyboard */,
+			);
+			path = Balance;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		170238F723F99865001454CC /* GraalBank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1702391723F99867001454CC /* Build configuration list for PBXNativeTarget "GraalBank" */;
+			buildPhases = (
+				170238F423F99865001454CC /* Sources */,
+				170238F523F99865001454CC /* Frameworks */,
+				170238F623F99865001454CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GraalBank;
+			productName = GraalBank;
+			productReference = 170238F823F99865001454CC /* GraalBank.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1702390D23F99867001454CC /* GraalBankTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1702391A23F99867001454CC /* Build configuration list for PBXNativeTarget "GraalBankTests" */;
+			buildPhases = (
+				1702390A23F99867001454CC /* Sources */,
+				1702390B23F99867001454CC /* Frameworks */,
+				1702390C23F99867001454CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1702391023F99867001454CC /* PBXTargetDependency */,
+			);
+			name = GraalBankTests;
+			productName = GraalBankTests;
+			productReference = 1702390E23F99867001454CC /* GraalBankTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		170238F023F99865001454CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = ChapuyJ;
+				TargetAttributes = {
+					170238F723F99865001454CC = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					1702390D23F99867001454CC = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 170238F723F99865001454CC;
+					};
+				};
+			};
+			buildConfigurationList = 170238F323F99865001454CC /* Build configuration list for PBXProject "GraalBank" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 170238EF23F99865001454CC;
+			productRefGroup = 170238F923F99865001454CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				170238F723F99865001454CC /* GraalBank */,
+				1702390D23F99867001454CC /* GraalBankTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		170238F623F99865001454CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1737287323F9BEA800B21378 /* BalanceViewController.storyboard in Resources */,
+				1702390823F99867001454CC /* LaunchScreen.storyboard in Resources */,
+				1702390523F99867001454CC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1702390C23F99867001454CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		170238F423F99865001454CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1737286B23F9A79000B21378 /* WithdrawValidator.swift in Sources */,
+				1737286223F999A200B21378 /* Account.swift in Sources */,
+				1737286F23F9BE9000B21378 /* BalanceViewController.swift in Sources */,
+				170238FC23F99865001454CC /* AppDelegate.swift in Sources */,
+				170238FE23F99865001454CC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1702390A23F99867001454CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1737286023F9997900B21378 /* AccountAcceptanceTests.swift in Sources */,
+				1737286423F9A52100B21378 /* AccountAcceptanceTests-VerboseGherkin.swift in Sources */,
+				1737287523F9C45A00B21378 /* WithdrawValidatorUnitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1702391023F99867001454CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 170238F723F99865001454CC /* GraalBank */;
+			targetProxy = 1702390F23F99867001454CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1702390623F99867001454CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1702390723F99867001454CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1702391523F99867001454CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1702391623F99867001454CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1702391823F99867001454CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GraalBank/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.chapuyj.GraalBank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1702391923F99867001454CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GraalBank/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.chapuyj.GraalBank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1702391B23F99867001454CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GraalBankTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.chapuyj.GraalBankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GraalBank.app/GraalBank";
+			};
+			name = Debug;
+		};
+		1702391C23F99867001454CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GraalBankTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.chapuyj.GraalBankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GraalBank.app/GraalBank";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		170238F323F99865001454CC /* Build configuration list for PBXProject "GraalBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1702391523F99867001454CC /* Debug */,
+				1702391623F99867001454CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1702391723F99867001454CC /* Build configuration list for PBXNativeTarget "GraalBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1702391823F99867001454CC /* Debug */,
+				1702391923F99867001454CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1702391A23F99867001454CC /* Build configuration list for PBXNativeTarget "GraalBankTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1702391B23F99867001454CC /* Debug */,
+				1702391C23F99867001454CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 170238F023F99865001454CC /* Project object */;
+}
