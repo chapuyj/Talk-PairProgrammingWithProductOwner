@@ -17,10 +17,6 @@ class BalanceViewController: UIViewController {
     @IBOutlet private weak var withdrawButton: UIButton!
     @IBOutlet private weak var depositButton: UIButton!
     
-    // MARK: - Vars
-    
-    private let account = Account(balance: 100)
-    
     // MARK: - Life cycle
 
     override func viewDidLoad() {
@@ -32,11 +28,15 @@ class BalanceViewController: UIViewController {
     
     @IBAction func didTapWithdraw(_ sender: Any) {
         if let input = inputTextField.text, let number = Int(input) {
-            account.withdraw(amount: number)
+            makeWithdraw(amount: number)
         }
         
         displayBalance()
         cleanInputText()
+    }
+    
+    private func makeWithdraw(amount: Int) {
+        //TODO: withdraw on account
     }
     
     // MARK: - Deposit
@@ -46,7 +46,8 @@ class BalanceViewController: UIViewController {
     // MARK: - Text Fields
     
     private func displayBalance() {
-        amountLabel.text = "\(account.balance) €"
+        //TODO: display balance
+        amountLabel.text = "NaN €"
     }
     
     private func cleanInputText() {

@@ -11,13 +11,11 @@
 		170238FE23F99865001454CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170238FD23F99865001454CC /* SceneDelegate.swift */; };
 		1702390523F99867001454CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1702390423F99867001454CC /* Assets.xcassets */; };
 		1702390823F99867001454CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1702390623F99867001454CC /* LaunchScreen.storyboard */; };
-		1737286023F9997900B21378 /* AccountAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1737285F23F9997900B21378 /* AccountAcceptanceTests.swift */; };
-		1737286223F999A200B21378 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1737286123F999A200B21378 /* Account.swift */; };
-		1737286423F9A52100B21378 /* AccountAcceptanceTests-VerboseGherkin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1737286323F9A52000B21378 /* AccountAcceptanceTests-VerboseGherkin.swift */; };
-		1737286B23F9A79000B21378 /* WithdrawValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1737286A23F9A79000B21378 /* WithdrawValidator.swift */; };
 		1737286F23F9BE9000B21378 /* BalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1737286E23F9BE9000B21378 /* BalanceViewController.swift */; };
 		1737287323F9BEA800B21378 /* BalanceViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1737287223F9BEA800B21378 /* BalanceViewController.storyboard */; };
-		1737287523F9C45A00B21378 /* WithdrawValidatorUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1737287423F9C45A00B21378 /* WithdrawValidatorUnitTests.swift */; };
+		17650ECD23FC6C8E00E03401 /* UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17650ECC23FC6C8E00E03401 /* UnitTests.swift */; };
+		17650ECF23FC6CBA00E03401 /* AcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17650ECE23FC6CBA00E03401 /* AcceptanceTests.swift */; };
+		17650ED123FC6CEA00E03401 /* Domain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17650ED023FC6CEA00E03401 /* Domain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,13 +37,11 @@
 		1702390923F99867001454CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1702390E23F99867001454CC /* GraalBankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraalBankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1702391423F99867001454CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1737285F23F9997900B21378 /* AccountAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountAcceptanceTests.swift; sourceTree = "<group>"; };
-		1737286123F999A200B21378 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
-		1737286323F9A52000B21378 /* AccountAcceptanceTests-VerboseGherkin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountAcceptanceTests-VerboseGherkin.swift"; sourceTree = "<group>"; };
-		1737286A23F9A79000B21378 /* WithdrawValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawValidator.swift; sourceTree = "<group>"; };
 		1737286E23F9BE9000B21378 /* BalanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceViewController.swift; sourceTree = "<group>"; };
 		1737287223F9BEA800B21378 /* BalanceViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BalanceViewController.storyboard; sourceTree = "<group>"; };
-		1737287423F9C45A00B21378 /* WithdrawValidatorUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawValidatorUnitTests.swift; sourceTree = "<group>"; };
+		17650ECC23FC6C8E00E03401 /* UnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTests.swift; sourceTree = "<group>"; };
+		17650ECE23FC6CBA00E03401 /* AcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptanceTests.swift; sourceTree = "<group>"; };
+		17650ED023FC6CEA00E03401 /* Domain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +105,7 @@
 		1737286523F9A68F00B21378 /* Acceptance Tests */ = {
 			isa = PBXGroup;
 			children = (
-				1737285F23F9997900B21378 /* AccountAcceptanceTests.swift */,
-				1737286323F9A52000B21378 /* AccountAcceptanceTests-VerboseGherkin.swift */,
+				17650ECE23FC6CBA00E03401 /* AcceptanceTests.swift */,
 			);
 			path = "Acceptance Tests";
 			sourceTree = "<group>";
@@ -118,7 +113,7 @@
 		1737286623F9A69800B21378 /* Unit Tests */ = {
 			isa = PBXGroup;
 			children = (
-				1737287423F9C45A00B21378 /* WithdrawValidatorUnitTests.swift */,
+				17650ECC23FC6C8E00E03401 /* UnitTests.swift */,
 			);
 			path = "Unit Tests";
 			sourceTree = "<group>";
@@ -144,8 +139,7 @@
 		1737286923F9A73A00B21378 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				1737286123F999A200B21378 /* Account.swift */,
-				1737286A23F9A79000B21378 /* WithdrawValidator.swift */,
+				17650ED023FC6CEA00E03401 /* Domain.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -268,11 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1737286B23F9A79000B21378 /* WithdrawValidator.swift in Sources */,
-				1737286223F999A200B21378 /* Account.swift in Sources */,
 				1737286F23F9BE9000B21378 /* BalanceViewController.swift in Sources */,
 				170238FC23F99865001454CC /* AppDelegate.swift in Sources */,
 				170238FE23F99865001454CC /* SceneDelegate.swift in Sources */,
+				17650ED123FC6CEA00E03401 /* Domain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,9 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1737286023F9997900B21378 /* AccountAcceptanceTests.swift in Sources */,
-				1737286423F9A52100B21378 /* AccountAcceptanceTests-VerboseGherkin.swift in Sources */,
-				1737287523F9C45A00B21378 /* WithdrawValidatorUnitTests.swift in Sources */,
+				17650ECD23FC6C8E00E03401 /* UnitTests.swift in Sources */,
+				17650ECF23FC6CBA00E03401 /* AcceptanceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
